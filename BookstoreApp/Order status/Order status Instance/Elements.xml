@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="$Resources:OrderStatusListInstance_Title"
+                OnQuickLaunch="TRUE"
+                TemplateType="10001"
+                Url="Lists/Order status"
+                Description="$Resources:OrderStatusListInstance_Description">
+      <Data>
+          <Rows>
+              <Row>
+                  <Field Name="Title">$Resources:OrderStatus_Placed</Field>
+              </Row>
+              <Row>
+                  <Field Name="Title">$Resources:OrderStatus_Fulfilled</Field>
+              </Row>
+              <Row>
+                  <Field Name="Title">$Resources:OrderStatus_Shipped</Field>
+              </Row>
+          </Rows>
+      </Data>
+  </ListInstance>
+</Elements>

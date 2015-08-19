@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List project item, an error will occur when the project is run. -->
+    <ListTemplate
+        Name="Orders"
+        Type="10000"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="Orders"
+        Description="My List Definition"
+        Image="/_layouts/15/images/itgen.png"/>
+    <Field
+        Name="Bookname"
+        ID="{2ef60a05-29b6-41db-9611-c0cf7d8e73c5}"
+        DisplayName="$Resources:OrdersListColumn_Bookname"
+        Type="Text"
+        Required="TRUE" />
+    <Field
+        Name="Price"
+        ID="{7af42815-d69e-426a-a1c8-9da5610e362c}"
+        DisplayName="$Resources:OrdersListColumn_Price"
+        Type="Currency"
+        Required="FALSE" />
+    <Field
+        Name="Orderstatus"
+        ID="{687ee751-2e0a-4099-966e-d2c225d48234}"
+        DisplayName="$Resources:OrdersListColumn_Orderstatus"
+        Type="Lookup"
+        Required="FALSE"
+        List="Lists/Order status"
+        ShowField="Title" />
+</Elements>

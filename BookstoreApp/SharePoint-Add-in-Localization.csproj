@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7B98377-BC23-49B3-861B-606DB84DF41F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookstoreApp</RootNamespace>
+    <AssemblyName>BookstoreApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{1b03024a-e8f0-48fc-9fe4-936f5ee750ee}</AppFeaturePartId>
+    <WspPartId>{5b48fe9b-67a2-48cb-8564-6445fef89052}</WspPartId>
+    <CspkgPartId>{77b1494c-8878-46c2-a06b-738cf0137cb1}</CspkgPartId>
+    <SqlPackagePartId>{5db63b2e-9c6d-403a-be12-56ee5cf0f8e8}</SqlPackagePartId>
+    <ActiveDeploymentConfiguration>Deploy App for SharePoint</ActiveDeploymentConfiguration>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Just AddRelsToAppPackage|AnyCPU'">
+    <OutputPath>bin\Just AddRelsToAppPackage\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="BookstoreActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dfa7be0-0981-4c8a-a372-9625be889c13}</SharePointProjectItemId>
+    </None>
+    <None Include="BookstoreAppParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b120481a-0f10-48c4-868a-0ff6779d71a8}</SharePointProjectItemId>
+    </None>
+    <None Include="Order status\Order status Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4d39eb8d-ba87-4013-a5a4-41c70cd80229}</SharePointProjectItemId>
+    </None>
+    <None Include="Order status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{be556221-3bfe-4adc-89c1-c227915393cd}</SharePointProjectItemId>
+    </None>
+    <None Include="Orders\OrdersInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{30544ca8-bac6-440f-a659-80e6cb72b36b}</SharePointProjectItemId>
+    </None>
+    <None Include="Orders\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6fe4d38-cef8-4966-8bdc-2512d60c4f2d}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28c03121-deec-4f8e-9d4a-62f6ceb82aa6}</SharePointProjectItemId>
+    </None>
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="BookstoreActions\Elements.xml">
+      <SubType>Designer</SubType>
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="BookstoreAppParts\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Elements.xml" />
+    <Content Include="Order status\Elements.xml" />
+    <Content Include="Order status\Order status Instance\Elements.xml" />
+    <Content Include="Order status\Schema.xml" />
+    <Content Include="Orders\Elements.xml" />
+    <Content Include="Orders\OrdersInstance\Elements.xml" />
+    <Content Include="Orders\Schema.xml" />
+    <Content Include="Pages\BookPurchaseHost.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Home.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5db63b2e-9c6d-403a-be12-56ee5cf0f8e8}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\Resources.en-US.js" />
+    <Content Include="Scripts\Resources.es-ES.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{418d7e38-226e-4dc6-9bef-7f313959331d}</SharePointProjectItemId>
+    </None>
+    <None Include="Styles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c5101ba-db84-489e-8021-a63c6969d734}</SharePointProjectItemId>
+    </None>
+    <Content Include="Styles\Elements.xml" />
+    <Content Include="Styles\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{47a0fe67-7e44-4058-b980-e6f35b2f91d4}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{c4a1b192-958a-408f-b5e9-5b9de3358d24}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Resources.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.resx">
+      <OpcRelationship>content-defaultresource</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.es-ES.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookstoreWeb\SharePoint-Add-in-LocalizationWeb.csproj">
+      <Project>{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}</Project>
+      <Name>SharePoint-Add-in-LocalizationWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>BookstoreWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.en-US.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

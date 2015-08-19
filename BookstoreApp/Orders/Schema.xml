@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Orders" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Orders" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+        
+      <ContentType ID="0x010092e3aea4c6ca4ebcb0806a3b9249c9c5" Name="ListFieldsContentType">
+        <FieldRefs>
+            
+            
+            
+            
+            
+            
+            
+        
+            <FieldRef ID="{2ef60a05-29b6-41db-9611-c0cf7d8e73c5}" Name="Bookname" /><FieldRef ID="{7af42815-d69e-426a-a1c8-9da5610e362c}" Name="Price" /><FieldRef ID="{687ee751-2e0a-4099-966e-d2c225d48234}" Name="Orderstatus" /></FieldRefs>
+        </ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+        
+        
+        
+    
+        
+        
+        <Field Name="Bookname" ID="{2ef60a05-29b6-41db-9611-c0cf7d8e73c5}" Type="Text" Required="TRUE" /><Field Name="Price" ID="{7af42815-d69e-426a-a1c8-9da5610e362c}" Type="Currency" Required="FALSE" /><Field Name="Orderstatus" ID="{687ee751-2e0a-4099-966e-d2c225d48234}" Type="Lookup" Required="FALSE" List="Lists/Order status" ShowField="Title" /></Fields>
+    <Views>
+        <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Bookname" /><FieldRef Name="Price" /><FieldRef Name="Orderstatus" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

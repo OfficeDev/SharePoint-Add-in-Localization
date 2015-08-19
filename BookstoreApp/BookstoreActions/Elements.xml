@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+          Id="BookRequest"
+          RegistrationId="101"
+          RegistrationType="List"
+          Location="CommandUI.Ribbon"
+          Title="$Resources:_Res,RibbonCA_Title"
+          Description="$Resources:RibbonCA_Description"
+          HostWebDialog="true"
+          HostWebDialogHeight="100"
+          HostWebDialogWidth="300">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Library.Settings.Controls._children">
+          <Button
+              Id="Ribbon.Library.Settings.PropertyViewer"
+              Alt="$Resources:RibbonCA_Alt"
+              Sequence="25"
+              Command="Invoke_BookRequest"
+              LabelText="$Resources:RibbonCA_Label"
+              TemplateAlias="o1"
+              Image32by32="_layouts/15/images/placeholder32x32.png"
+              Image16by16="_layouts/15/images/placeholder16x16.png"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+            Command="Invoke_BookRequest"
+            CommandAction="~remoteAppUrl/BookRequest.aspx?{StandardTokens}&amp;list={ListId}"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction
+      Title="$Resources:ECBCA_Title"
+      ImageUrl="_layouts/15/images/placeholder16x16.png"
+      Sequence="1"
+      Location="EditControlBlock"
+      RegistrationId="101"
+      RegistrationType="List"
+      Id="BookPurchase">
+    <UrlAction Url="~appWebUrl/Pages/BookPurchaseHost.aspx?{StandardTokens}&amp;list={ListId}&amp;item={ItemId}"/>
+  </CustomAction>
+</Elements>

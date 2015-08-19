@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="Bookstore"
+     ProductID="{28c03121-deec-4f8e-9d4a-62f6ceb82aa6}"
+     Version="1.3.0.0"
+     SharePointMinVersion="15.0.0.0">
+
+  <Properties>
+    <Title>$Resources:App_Title;</Title>
+    <StartPage>~appWebUrl/Pages/Home.aspx?{StandardTokens}</StartPage>
+    <SupportedLocales>
+      <SupportedLocale CultureName="en-US" />
+      <SupportedLocale CultureName="es-ES" />
+      <SupportedLocale CultureName="fr-FR" />
+    </SupportedLocales>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="*" />
+  </AppPrincipal>
+
+
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Write" />
+  </AppPermissionRequests>
+</App>

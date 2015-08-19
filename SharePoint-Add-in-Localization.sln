@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePoint-Add-in-Localization", "BookstoreApp\SharePoint-Add-in-Localization.csproj", "{A7B98377-BC23-49B3-861B-606DB84DF41F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePoint-Add-in-LocalizationWeb", "BookstoreWeb\SharePoint-Add-in-LocalizationWeb.csproj", "{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Just AddRelsToAppPackage|Any CPU = Just AddRelsToAppPackage|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Just AddRelsToAppPackage|Any CPU.ActiveCfg = Just AddRelsToAppPackage|Any CPU
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B98377-BC23-49B3-861B-606DB84DF41F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}.Just AddRelsToAppPackage|Any CPU.ActiveCfg = Just AddRelsToAppPackage|Any CPU
+		{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0B5A77-D492-4F62-9C4F-C0EA0646C9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
