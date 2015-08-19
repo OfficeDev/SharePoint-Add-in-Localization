@@ -25,8 +25,9 @@ This sample requires the following:
 ## Description of the code ##
 This sample simulates a bookstore by using a SharePoint 2013 document library in which every document is a book. End users can request and buy new books by using the provided custom actions. The components of the add-in are localized for English and Spanish.
 
-	Note: The add-in is designed to use the base language of the SharePoint website -- the language that was selected when the website was created -- to determine which language it should use to render the add-in's componenents. It does not use the default language of set in the user's browser, however, some of the techniques in the sample can be used, with some modification when the browser setting is the criterion.
-
+<div style="margin-left: 5em;">
+**Note:** The add-in is designed to use the base language of the SharePoint website -- the language that was selected when the website was created -- to determine which language it should use to render the add-in's componenents. It does not use the default language of set in the user's browser, however, some of the techniques in the sample can be used, with some modification when the browser setting is the criterion.
+</div>
 This sample includes a remote web application that has web pages to handle the book request and book buying experiences in a simulated bookstore. (These remote web pages are never opened full screen. Some are surfaced in add-in parts. Some serve only to pass cross-domain JavaScript through an iFrame. 
 
 Custom actions provide the link between the document library and the add-in pages. The cross-domain library provides data access from the remote web application to the document library. The chrome control and SharePoint style sheet provide the classes to consistently style the web application pages. A custom list provides storage for the orders placed by the end user. End users can use the provided add-in part to display the orders history.
