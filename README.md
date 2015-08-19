@@ -80,7 +80,7 @@ The sample contains the following:
 15. After the add-in installs, the consent page opens. Click **Trust It**.
 16. The start page opens and looks similar to the follwoing. (The content is a very brief version of these instructions.)
 
-	![The add-in start page in English and Spanish](/LocalizationAdd-inScreenshots/startpageboth.png) 
+	![The add-in start page in English and Spanish](/LocalizationAdd-inScreenshots/StartPageBOTH.png) 
 
 7. Open the raw HTML view of the page. (In IE, right-click the page and select **View Code**.)
 8. Find the line 
@@ -88,33 +88,33 @@ The sample contains the following:
 9. Notice that the term "INVARIANT" is part of the heading but it only appears on the rendered version of the page on the French website. On the English and Spanish websites, alternate strings are injected into the page by JavaScript.
 10. Close the raw view, and in the browser open another tab and navigate to the host web home page. Then navigate to any document library on the host web, such as **Documents**.
 11. Open the **Library** tab on the ribbon and click the **Request a Book** button.
-	![The Request a Book ribbon button in English and Spanish](/LocalizationAdd-inScreenshots/ribbonbuttonboth.png) 
+	![The Request a Book ribbon button in English and Spanish](/LocalizationAdd-inScreenshots/RibbonButtonBOTH.png) 
 
 12. On the dialog that opens, enter a book title and press **Request book**.
-	![The Request a Book dialog in English and Spanish](/LocalizationAdd-inScreenshots/requestbookpopupboth.png) 
+	![The Request a Book dialog in English and Spanish](/LocalizationAdd-inScreenshots/RequestBookPopupBOTH.png) 
 
 13. The new file appears in the library.
- 	![The Request a Book dialog in English and Spanish](/LocalizationAdd-inScreenshots/documentlibraryboth.png) 
+ 	![The Request a Book dialog in English and Spanish](/LocalizationAdd-inScreenshots/DocumentLibraryBOTH.png) 
 
 14. Open the context menu for the new document and select **Buy this book**. A book purchase form page opens. 
 14. Press the **Buy book!** link, and the fake Latin text of the book appears on the form.
- 	![The book purchase form in English and Spanish](/LocalizationAdd-inScreenshots/buybookformboth.png) 
+ 	![The book purchase form in English and Spanish](/LocalizationAdd-inScreenshots/BuyBookFormBOTH.png) 
 
 14. Navigate to any other page on the host web, such as its home page. 
 15. On the ribbon select **Page | Edit | Insert**. 
 16. On the **Insert** ribbon select **Add-in part**. (On older versions of SharePoint, it may say **App part**.)
 17. Select the **Book orders** add-in part, and then put the cursor in any Web Part zone on the page and click **Add**. The add-in part will be added to the page. *It may take a full minute for the data to be populated.* When it has finished rendering, there is a list of all the books you have ordered.
- 	![The book purchase form in English and Spanish](/LocalizationAdd-inScreenshots/bookordersadd-inpartboth.png) 
+ 	![The Book Orders add-in part in English and Spanish](/LocalizationAdd-inScreenshots/BookOrdersAdd-inPartBOTH.png) 
 
 20. Delete the add-in part from the page. (Removing an add-in, or retracting it in Visual Studio, does not remove add-in parts from pages.)
 21. Reopen the tab with the add-in's start page, and use the link to the **Orders** list in the last line of the instructions to open the **Orders** list in another tab. Notice that the price in English site is USD, but it is Euros in the Spanish site.
- 	![The book purchase form in English and Spanish](/LocalizationAdd-inScreenshots/orderslistboth.png) 
+ 	![The Orders list in English and Spanish](/LocalizationAdd-inScreenshots/OrdersListBOTH.png) 
 
 22. Just to the right of the list title is a small "i" in a circle. Click this to see the list description.
- 	![The book purchase form in English and Spanish](/LocalizationAdd-inScreenshots/OrdersListTitleDescriptionBOTH.png) 
+ 	![The description of the Orders list in English and Spanish](/LocalizationAdd-inScreenshots/OrdersListTitleDescriptionBOTH.png) 
 
 23. Reopen the tab with the add-in's start page, and use the link to the **Order status** list in the last line of the instructions to open the **Order status** list in another tab. Note again that the description, as well as the title and the status values has been localized.
- 	![The book purchase form in English and Spanish](/LocalizationAdd-inScreenshots/OrderStatusListBOTH.png) 
+ 	![The Order Status list in English and Spanish](/LocalizationAdd-inScreenshots/OrderStatusListBOTH.png) 
 
 ## Troubleshooting
 
