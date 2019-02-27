@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- SharePoint
+- Office 365
+languages:
+- C#
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/19/2015 2:56:26 PM
+---
 # Localize the add-in web, host web, and remote components of a SharePoint Add-in #
 
 ## Summary
