@@ -11,7 +11,7 @@ extensions:
   - Add-ins
   createdDate: 8/19/2015 2:56:26 PM
 ---
-# Localize the add-in web, host web, and remote components of a SharePoint Add-in #
+# Localize the add-in web, host web, and remote components of a SharePoint Add-in
 
 ## Summary
 Use resource (resx) files and JavaScript string files to localize custom add-in parts, web parts, popup dialogs, page chrome, lists, and list columns.
@@ -19,7 +19,6 @@ Use resource (resx) files and JavaScript string files to localize custom add-in 
 ### Applies to ###
 -  SharePoint Online and on-premise SharePoint 2013 and later 
 
-----------
 ## Prerequisites ##
 This sample requires the following:
 
@@ -191,10 +190,5 @@ We'd love to get your feedback on this sample. You can send your questions and s
 ### Copyright ###
 
 Copyright (c) Microsoft. All rights reserved.
-
-
-
-
-
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
