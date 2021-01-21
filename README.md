@@ -13,6 +13,8 @@ extensions:
 ---
 # Localize the add-in web, host web, and remote components of a SharePoint Add-in
 
+> SharePoint add-in model is considered as a legacy option for extending SharePoint user interface. Please see [SharePoint Framework documentation](https://aka.ms/spfx) and the [SharePoint Framework samples](https://aka.ms/spfx-webparts) for the future proven option to extend SharePoint Online. Possible backend services should be using Azure Active Directly based registration and related app models.
+
 ## Summary
 Use resource (resx) files and JavaScript string files to localize custom add-in parts, web parts, popup dialogs, page chrome, lists, and list columns.
 
